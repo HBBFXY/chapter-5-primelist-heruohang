@@ -1,5 +1,5 @@
 def isPrime(num):
-    """辅助函数：判断一个数是否为素数"""
+    """辅助函数：判断一个数是否为质数"""
     if num < 2:
         return False
     if num == 2:
@@ -12,7 +12,7 @@ def isPrime(num):
     return True
 
 def PrimeList(N):
-    """生成小于N的所有素数，以空格分隔输出"""
+    """生成小于N的所有质数，以空格分隔输出"""
     primes = []
     for num in range(2, N):
         if isPrime(num):
